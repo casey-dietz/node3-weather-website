@@ -4,7 +4,6 @@ const forecast = (latitude, longitude, cb) => {
     const url = `http://api.weatherstack.com/current?access_key=d70c99505beda1f29c13b38f2adb1078&query=${latitude},${longitude}&units=f`
 
     request({ url, json: true }, (err, { body }) => {
-        console.log(body)
         if (err) {
             cb('Unable to connect weather service!', undefined)
         } else if (body.err) {
