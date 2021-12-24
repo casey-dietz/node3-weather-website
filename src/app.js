@@ -39,14 +39,14 @@ app.get('/', (req, res) => {
 
 app.get('/about', (req, res) => {
     res.render('about', {
-        title: 'About Me',
-        name: 'Casey Paul Dietz'
+        title: 'About',
+        name: 'Casey Dietz'
     })
 })
 
 app.get('/help', (req, res) => {
     res.render('help', {
-        helpText: 'This is some helpful text',
+        helpText: 'In the weather search bar enter a valid City, State, Place, or Area Code to receive back a weather forecast.',
         title: 'Help',
         name: 'Casey Dietz'
     })
